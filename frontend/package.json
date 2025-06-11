@@ -1,0 +1,61 @@
+{
+  "name": "collaborative-forms-frontend",
+  "version": "1.0.0",
+  "description": "Real-time collaborative form filling frontend",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "lucide-react": "^0.263.1",
+    "postcss": "^8.4.27",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.7.2",
+    "tailwindcss": "^3.3.3",
+    "web-vitals": "^5.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/",
+    "format": "prettier --write src/",
+    "docker:build": "docker build -t collaborative-forms-frontend .",
+    "docker:run": "docker run -p 3000:3000 collaborative-forms-frontend"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.0"
+  },
+  "proxy": "http://localhost:3001",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
